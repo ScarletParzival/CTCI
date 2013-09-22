@@ -3,3 +3,5 @@
 
 #IntelliJ artifacts
 *.iml
+*.xml
+*.name
