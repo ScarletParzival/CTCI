@@ -44,12 +44,14 @@ public class CountChildSteps {
     }
     public static void main(String[] args){
         CountChildSteps childSteps = new CountChildSteps();
-        System.out.println("Counting the number of ways with n=3: "+childSteps.countWays(3,3,"original"));
-        int[] map = new int[3+1];
+        int N=3;
+        System.out.println("Counting the number of ways with n="+N+": "+childSteps.countWays(N,N,"main"));
+        int[] map = new int[N+1];
         for(int i=0; i<map.length; ++i){
             map[i] = -1;
         }
         System.out.println("\n");
-        System.out.println("Counting the number of ways with n=30: "+childSteps.countWaysDP(3, map, 3,"original"));
+        System.out.println("Counting the number of ways with n="+N+": "+childSteps.countWaysDP(N, map, N,"main"));
+        System.out.println(Math.random());
     }
 }
